@@ -30,6 +30,7 @@ def get_english_meaning(file_path, jap_emoticons)
   sorted_library = load_library(file_path)
   sorted_library.each do |key, value|
     if value[:japanese] == jap_emoticons
+      binding.pry
       return key
     end
   end
