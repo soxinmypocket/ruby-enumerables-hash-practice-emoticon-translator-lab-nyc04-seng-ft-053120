@@ -34,7 +34,7 @@ def get_english_meaning(file_path, emoticon)
  #emoji == nil ? "Sorry, that emoticon was not found" : emoji[0]
  sorted_library = load_library(file_path)
  sorted_library.each do |key, value|
-   if sorted_library[:japanese][1] = emoticons
+   if sorted_library[:japanese][1] = emoticon
      return key
    end
  end
