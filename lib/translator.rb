@@ -24,7 +24,7 @@ def get_japanese_emoticon(file_path, emoticon)
  sorted_library.each do |key, value|
   #emoji = emoticons.values.find {|faces| faces[0] == emoticon}
 #  emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
-  if value[:japanese] == jap_emoticons
+  if value[:english] == jap_emoticons
     return key
     end
   end
