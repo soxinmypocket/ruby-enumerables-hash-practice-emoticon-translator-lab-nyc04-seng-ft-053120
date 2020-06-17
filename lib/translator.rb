@@ -23,7 +23,7 @@ def get_japanese_emoticon(file_path, emoticon)
 #  emoticons = load_library(file_path) #load library
   #emoji = emoticons.values.find {|faces| faces[0] == emoticon}
 #  emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
-#end
+end
 
 
 def get_english_meaning(file_path, jap_emoticons)
@@ -35,6 +35,7 @@ def get_english_meaning(file_path, jap_emoticons)
   end
   "Sorry, that emoticon was not found"
 end
+
   #takes a Japanese emoticon and returns its name in English.
   #This method will rely on load_library to first load the YAML file.
  #emoticons = load_library(file_path)#load library
