@@ -5,15 +5,10 @@ require 'pry'
 #load_library return a hash where each key is the name of an emoticon
 def load_library(emoticons)
   emoticons = YAML.load_file('/lib/emoticons.yml')
-#Each emoticon name should point to a nested hash containing two keys, :english and :japanese.
-#These keys will point to English and Japanese versions of the emoticon.
-new_hash = {}
-#key is assigned to emoji meaning
-emoticons.each do |key, value|
-  new_hash[:key] = {}
-  #value assigned to new hash with :english key=> english emoji
-  #value assigned to new hash with :japanese key=> japanese emoji value
-
+  new_hash = {}
+  
+  emoticons.each do |key, value|
+  new_hash[key] = {}
   new_hash[key][:english] = emoticons[key[0]]
   new_hash[key][:japanese] = emoticons[key[1]]
 
