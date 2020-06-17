@@ -9,8 +9,8 @@ def load_library(file_path)
 
   file_path.each do |key, value|
   new_hash[key] = {}
-  new_hash[key][:english] = file_path[key[0]]
-  new_hash[key][:japanese] = file_path[key[1]]
+  new_hash[key][:english] = file_path[key][0]
+  new_hash[key][:japanese] = file_path[key][1]
 
 
 end
