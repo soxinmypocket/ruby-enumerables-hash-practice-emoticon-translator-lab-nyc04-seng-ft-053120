@@ -35,3 +35,4 @@ def get_english_meaning(file_path, emoticon)
    return key
  emoji == nil ? "Sorry, that emoticon was not found" : emoji[0]
 end
+end
