@@ -21,8 +21,15 @@ def get_japanese_emoticon(file_path, emoticon)
 # will take a traditional Western emoticon (i.g. :)) and translate it to its Japanese version ((＾ｖ＾)).
 #It will also rely load_library to first load the YAML file.
  sorted_library = load_library(file_path) #load library
+ sorted_library.each do |key, value|
   #emoji = emoticons.values.find {|faces| faces[0] == emoticon}
 #  emoji == nil ? "Sorry, that emoticon was not found" : emoji[1]
+  if value[:japanese] == jap_emoticons
+    return key
+    end
+  end
+  "Sorry, that emoticon was not found"
+
 end
 
 
