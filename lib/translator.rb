@@ -12,8 +12,8 @@ def load_library(file_path)
   new_hash[key][:english] = file_path[key][0]
   new_hash[key][:japanese] = file_path[key][1]
 
-end
-new_hash
+  end
+  new_hash
 end
 
 
