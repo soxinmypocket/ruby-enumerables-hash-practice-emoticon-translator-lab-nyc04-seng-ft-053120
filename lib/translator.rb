@@ -17,7 +17,7 @@ def load_library(file_path)
 end
 
 def get_japanese_emoticon(file_path, usa_emoticon)
-# will take a traditional Western emoticon (i.g. :)) and translate it to its Japanese version ((＾ｖ＾)).
+# Will take a traditional Western emoticon (i.g. :)) and translate it to its Japanese version ((＾ｖ＾)).
 # It will also rely load_library to first load the YAML file.
  sorted_library = load_library(file_path) #load library
  sorted_library.each do |key, value|
