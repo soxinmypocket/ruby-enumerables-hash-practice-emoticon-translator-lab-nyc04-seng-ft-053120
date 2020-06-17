@@ -34,6 +34,7 @@ def get_english_meaning(file_path, jap_emoticons)
     end
   end
   "Sorry, that emoticon was not found"
+end
   #takes a Japanese emoticon and returns its name in English.
   #This method will rely on load_library to first load the YAML file.
  emoticons = load_library(file_path)#load library
