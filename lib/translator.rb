@@ -33,4 +33,3 @@ def get_english_meaning(file_path, emoticon)
  emoji = emoticons.find {|name, faces| faces[1] == emoticon}
  emoji == nil ? "Sorry, that emoticon was not found" : emoji[0]
 end
-end
