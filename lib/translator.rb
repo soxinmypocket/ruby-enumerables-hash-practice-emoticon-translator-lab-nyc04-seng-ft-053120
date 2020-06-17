@@ -14,7 +14,7 @@ emoticons.each do |key, value|
 #value assigned to new hash with :english key=> english emoji
 emoticons[:english][0] => new_hash[0]
 #value assigned to new hash with :japanese key=> japanese emoji value
-emoticons[:japanese][1]=> new_hash[1]
+emoticons[:japanese][1] => new_hash[1]
 
   end
 return new_hash
