@@ -3,7 +3,7 @@ require 'yaml'
 require 'pry'
 #convert YAML file to a file ruby can interpret
 #load_library return a hash where each key is the name of an emoticon
-def load_library(emoticons)
+def load_library(file_path)
   emoticons = YAML.load_file('/lib/emoticons.yml')
   new_hash = {}
 
