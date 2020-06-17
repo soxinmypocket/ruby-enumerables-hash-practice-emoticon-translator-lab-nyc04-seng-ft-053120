@@ -16,9 +16,9 @@ emoticons[:english][0] => new_hash[0]
 #value assigned to new hash with :japanese key=> japanese emoji value
 emoticons[:japanese][1] => new_hash[1]
 
-  
-return new_hash
 
+return new_hash
+end
 end
 
 
