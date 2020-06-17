@@ -4,13 +4,13 @@ require 'pry'
 #convert YAML file to a file ruby can interpret
 #load_library return a hash where each key is the name of an emoticon
 def load_library(file_path)
-  emoticons = YAML.load_file('/lib/emoticons.yml')
+  file_path = YAML.load_file('/lib/emoticons.yml')
   new_hash = {}
 
   file_path.each do |key, value|
   new_hash[key] = {}
-  new_hash[key][:english] = emoticons[key[0]]
-  new_hash[key][:japanese] = emoticons[key[1]]
+  new_hash[key][:english] = file_path[key[0]]
+  new_hash[key][:japanese] = file_path[key[1]]
 
 
 end
