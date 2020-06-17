@@ -4,7 +4,7 @@ require 'pry'
 #convert YAML file to a file ruby can interpret
 #load_library return a hash where each key is the name of an emoticon
 def load_library(emoticons)
-  emoticons = YAML.load_file(file_path)
+  emoticons = YAML.load_file(emoticons)
 #Each emoticon name should point to a nested hash containing two keys, :english and :japanese.
 #These keys will point to English and Japanese versions of the emoticon.
 new_hash = {}
