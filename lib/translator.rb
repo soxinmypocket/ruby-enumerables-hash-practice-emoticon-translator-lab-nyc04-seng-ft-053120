@@ -10,13 +10,13 @@ def load_library(file_path)
 new_hash = {}
 #key is assigned to emoji meaning
 emoticons.each do |key, value|
-  emoticons[key] => new_hash
-#value assigned to new hash with :english key=> english emoji
-emoticons[:english][0] => new_hash[0]
-#value assigned to new hash with :japanese key=> japanese emoji value
-emoticons[:japanese][1] => new_hash[1]
+  new_hash[:key] = {}
+  #value assigned to new hash with :english key=> english emoji
+  #value assigned to new hash with :japanese key=> japanese emoji value
 
-
+  new_hash[key][:english] = emoticons[key][0]
+  new_hash[key][:japanese] = emoticons[key][1]
+  
 return new_hash
 end
 
