@@ -17,8 +17,9 @@ emoticons.each do |key, value|
   new_hash[key][:english] = emoticons[key][0]
   new_hash[key][:japanese] = emoticons[key][1]
 
-return new_hash
+
 end
+new_hash
 end
 
 
