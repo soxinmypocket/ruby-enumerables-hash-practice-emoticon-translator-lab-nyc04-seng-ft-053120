@@ -31,6 +31,6 @@ def get_english_meaning(file_path, emoticon)
   #This method will rely on load_library to first load the YAML file.
  emoticons = load_library(file_path)#load library
  emoji = emoticons.find {|name, faces| faces[1] == emoticon}
-  return emoji
+  emoji
  emoji == nil ? "Sorry, that emoticon was not found" : emoji[0]
 end
