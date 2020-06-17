@@ -8,7 +8,17 @@ def load_library(file_path)
 #Each emoticon name should point to a nested hash containing two keys, :english and :japanese.
 #These keys will point to English and Japanese versions of the emoticon.
 new_hash = {}
+#key is assigned to emoji meaning
 emoticons.each do |key, value|
+  emoticons[key] => new_hash
+#value assigned to new hash with :english key=> english emoji
+emoticons[:english][0] => new_hash[0]
+#value assigned to new hash with :japanese key=> japanese emoji value
+emoticons[:japanese][1]=> new_hash[1]
+
+  end
+return new_hash
+
 end
 
 
