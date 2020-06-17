@@ -19,7 +19,6 @@ emoticons[:japanese][1] => new_hash[1]
 
 return new_hash
 end
-end
 
 
 def get_japanese_emoticon(file_path, emoticon)
